@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Game Page</h1>
+        <input type="text" id="searchInput" placeholder="Search for a game by name">
+    </header>
+
+    <main>
+        <div id="gameGridContainer">
+            <div id="gameThumbnails" class="single-column">
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/trafficracer2300200.webp" alt="Game 1 Thumbnail" data-game-url="https://cdn.htmlgames.com/TrafficRacer2/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/jollyjongbirds300200.webp" alt="Game 2 Thumbnail" data-game-url="https://cdn.htmlgames.com/JollyJongBirds/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/princess-jewels-300.webp" alt="Game 3 Thumbnail" data-game-url="https://cdn.htmlgames.com/PrincessJewels/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/piratemysteries300200.webp" alt="Game 4 Thumbnail" data-game-url="https://cdn.htmlgames.com/PirateMysteries/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/rotris300200.webp" alt="Game 5 Thumbnail" data-game-url="https://cdn.htmlgames.com/Rotris/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/airportsniper300200.webp" alt="Game 6 Thumbnail" data-game-url="https://cdn.htmlgames.com/AirportSniper/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/squirrelconnection300200.webp" alt="Game 7 Thumbnail" data-game-url="https://cdn.htmlgames.com/SquirrelConnection/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/restauranthiddendifferences300.webp" alt="Game 8 Thumbnail" data-game-url="https://cdn.htmlgames.com/RestaurantHiddenDifferences/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <img class="game-thumbnail" src="thumbnails/galaxyshooter300200.webp" alt="Game 9 Thumbnail" data-game-url="https://cdn.htmlgames.com/GalaxyShooter/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/ninjadarts300200.webp" alt="Game 7 Thumbnail" data-game-url="https://cdn.htmlgames.com/NinjaDarts/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/archer300200.webp" alt="Game 8 Thumbnail" data-game-url="https://cdn.htmlgames.com/Archer/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            <!-- Example game thumbnail -->
+            <img class="game-thumbnail" src="thumbnails/bubblebilliards300200.webp" alt="Game 9 Thumbnail" data-game-url="https://cdn.htmlgames.com/BubbleBilliards/">
+            <!-- Add more game thumbnails as needed with data-game-url attribute -->
+            </div>
+        </div>
+
+        <div id="gameContainer" class="hidden">
+            <!-- The game will be loaded here -->
+            <iframe class="game-iframe" id="gameFrame" frameborder="10" width="100%" height="500"></iframe>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

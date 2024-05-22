@@ -1,0 +1,98 @@
+/* Reset some default browser styles */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Style the main content section */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the game thumbnails */
+.game-thumbnail {
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+
+/* Center align the game thumbnails within their container */
+#gameThumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to the top */
+}
+
+/* Update the transition property for game grid and game container */
+#gameGridContainer {
+    /* ... other styles ... */
+    transform: translateY(0); /* Initial position at the top */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+#gameContainer {
+    /* ... other styles ... */
+    transform: translateY(100%); /* Initial position below the game grid */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+
+/* Add a button-like style for the game iframe */
+.game-iframe {
+    border: none;
+    background-color: #5f5f5fa7;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .game-thumbnail {
+        margin: 10px auto;
+    }
+}
+
+/* Add styles for the hidden class */
+.hidden {
+    display: none;
+}

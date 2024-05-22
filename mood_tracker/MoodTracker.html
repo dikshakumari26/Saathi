@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="chart.js"></script>
+    <title>Mood Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Mood Tracker</h1>
+    </header>
+
+    <div class="content-wrapper">
+        <section id="mood-form">
+            <h2>Log Your Mood</h2>
+            <form id="mood-log-form">
+                <label for="mood">Select Your Mood:</label>
+                <select id="mood" required>
+                  <option value="😄 Happy">😄 Happy</option>
+                  <option value="😢 Sad">😢 Sad</option>
+                  <option value="😡 Angry">😡 Angry</option>
+                  <option value="😌 Calm">😌 Calm</option>
+                  <option value="😞 Depressed">😞 Depressed</option>
+                  <option value="💔 HeartBroken">💔 HeartBroken</option>
+                  <option value="😰 Anxious">😰 Anxious</option>
+                  <option value="😩 Overwhelmed">😩 Overwhelmed</option>
+                  <!--- Add more mood emojis as needed -->
+                </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" max="" required> <!-- Set max attribute dynamically -->
+
+                <button type="submit">Log Mood</button>
+                <!-- Add this button within the "mood-form" section -->
+                <button id="save-data-button">Save to JSON</button>
+
+            </form>
+        </section>
+
+        <section id="mood-history">
+            <h2>Your Mood History</h2>
+            <ul id="mood-list">
+                <!-- Mood entries will be dynamically added here -->
+            </ul>
+        </section>
+    </div>
+    
+    <div id="weekly-emotion-graph" class="graph-container">
+        <canvas id="weekly-emotion-chart" width="300" height="150"></canvas>
+    </div>
+
+    <!-- Separate JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

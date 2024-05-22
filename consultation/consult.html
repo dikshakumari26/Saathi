@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Counseling Services</title>
+</head>
+<body>
+    <header>
+        <h1>Counseling Services</h1>
+    </header>
+    
+    <section id="doctors">
+        <!-- Doctor listings will be dynamically added here -->
+    </section>
+
+    <section id="appointment-form">
+        <h2>Book an Appointment</h2>
+        <form id="booking-form">
+            <label for="doctor">Select a Doctor:</label>
+            <select id="doctor" required>
+                <!-- Doctor options will be dynamically added here -->
+            </select>
+
+            <label for="date">Select a Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Select a Time:</label>
+            <input type="time" id="time" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("bg1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #34689c; 
+  color: #fff;
+}
+
+#title {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.header-description {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  color: #777; }
+
+.header-instructions {
+  margin: 10px 0; 
+  text-align: center;
+  font-size: 0.9rem; 
+  overflow: hidden;
+  white-space: nowrap;
+ 
+}
+/* Add circular frame to the logo in header */
+
+
+
+
+
+
+
+/* Main Navigation Styles */
+.header-area .main-nav {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px; 
+  padding: 5px; 
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.header-area .main-nav .nav li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 80px; /* Adjust the margin value to increase spacing */
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  height: 100%;
+}
+
+
+
+.header-area .main-nav .nav li:last-child {
+  margin-right: 0;
+}
+/* Style for the "Welcome to Saathi" section */
+
+
+.welcome-section h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 5px;
+  color:rgb(255, 255, 255)
+}
+
+.welcome-section p {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Style for the inspirational quote */
+.quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Add more CSS styles for other sections, as needed */
+.why-mental-health {
+  padding: 20px 0;
+  
+  text-align: center;
+}
+
+.why-mental-health h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.why-mental-health p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+/* Style for the icon links */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.icon-box a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Adjust the box size as needed */
+  height: 200px; /* Adjust the box size as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 5px; /* Spacing between icon and label */
+  background-color: #fff; /* Background color for circular frame */
+}
+
+.icon-box img {
+  width: 100px; /* Adjust the icon size within the box */
+  height: 100px; /* Adjust the icon size within the box */
+  object-fit: cover;
+  margin: 10px; /* Add margin for centering within the circular frame */
+}
+
+.icon-label {
+  font-size: 12px; /* Adjust font size as needed */
+}
+
+
+
+
+
+
+
+
+
+/* Chatbot Styles */
+.chatbot-container {
+  width: 60%;
+  max-width: 600px;
+  min-height: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-log {
+  flex-grow: 1;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.chat-bubble {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user .chat-bubble {
+  background-color: #cee4e5;
+  align-self: flex-start;
+}
+
+.bot .chat-bubble {
+  background-color: #d4d2e1;
+  align-self: flex-end;
+}
+
+.bot .chat-bubble::before,
+.user .chat-bubble::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border: 8px solid transparent;
+  transform: translateY(-50%);
+}
+
+.bot .chat-bubble::before {
+  left: -10px;
+  border-right-color: #d4d2e1;
+}
+
+.user .chat-bubble::before {
+  right: -10px;
+  border-left-color: #cee4e5;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .chatbot-container {
+    width: 90%;
+    min-height: 250px;
+  }
+}
+
